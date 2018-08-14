@@ -181,14 +181,13 @@ header {
 
     .headerText {
         font-size: 2.5rem;
+        width: 100%;
     }
 }
 
-@media (max-aspect-ratio: 1/1) and (min-aspect-ratio: 10/12) {
+@media (max-width: 340px) {
     .headerText {
-        width: 340px;
-        bottom: 180px;
-        right: 580px;
+        font-size: 2rem;
     }
 }
 
@@ -258,6 +257,8 @@ header {
 @media (max-width: 770px) {
     .thumbs {
         height: 538px;
+        max-width: 320px;
+        margin: auto;
     }
 
     .projectB {
@@ -283,9 +284,7 @@ header {
 }
 
 .projectTitle {
-    font-size: 1.2rem;
     color: #fff;
-    font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
     display: block;
@@ -322,11 +321,21 @@ header {
   	opacity: .2;
 }
 
-.projectTitle span {
+.asap {
+    top: 38%;
+}
+
+.projectTitleMain {
     display: inline-block;
     padding: 10px 12px 12px;
-    border: 2px solid #fff;
+    /*border: 2px solid #fff;*/
     margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.projectTitleCaption {
+    padding: 10px 12px 12px;
 }
 
 /* /end portfolio section ------------------------------------------------------------------------- */
