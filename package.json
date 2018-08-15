@@ -28,6 +28,7 @@
     },
     "dependencies": {
         "npm": "^6.3.0",
+        "smooth-scroll": "^14.2.1",
         "zenscroll": "^4.0.2"
     }
 }

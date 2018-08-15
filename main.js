@@ -1,8 +1,8 @@
 import RadioSelector from './js/radio.selector.js';
 import Selector from './js/selector.js';
-import zenscroll from "zenscroll";
+import SmoothScroll from 'smooth-scroll';
 
-zenscroll.setup(500, 0);
+var scroll = new SmoothScroll('a[href*="#"]');
 
 window.fancySelector = {
     createRadioSelector: function( button, options ){ return new RadioSelector( button, options ); },

@@ -235,22 +235,21 @@ header {
     zoom: 1;
     float: left;
     -webkit-transition-property: -webkit-transform, opacity;
-    -moz-transition-property: -moz-transform, opacity;
-    -ms-transition-property: -ms-transform, opacity;
-    -o-transition-property: top, left, opacity;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
     transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
     -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -ms-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
     transition-duration: 0.8s;
 }
 
 .projectA {
+    -webkit-transform: translate3d(0px, 0px, 0px);
     transform: translate3d(0px, 0px, 0px);
 }
 
 .projectB {
+    -webkit-transform: translate3d(348px, 0px, 0px);
     transform: translate3d(348px, 0px, 0px);
 }
 
@@ -262,6 +261,7 @@ header {
     }
 
     .projectB {
+        -webkit-transform: translate3d(0px, 268px, 0px);
         transform: translate3d(0px, 268px, 0px);
     }
 }
@@ -292,9 +292,7 @@ header {
     top: 50%;
     margin: -20px auto 0;
     width: 100%;
-    -moz-transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
     opacity: 0;
 }
@@ -305,6 +303,7 @@ header {
 }
 
 .project a img {
+    -webkit-transition-property: all;
     transition-property: all;
     -webkit-transform: scale(1,1);
     -webkit-transition-timing-function: ease-out;
@@ -605,7 +604,6 @@ footer {
     display: inline-block;
     z-index: 500;
 }
-
 
 @media(min-width: 760px) {
     .stack {
