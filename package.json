@@ -27,7 +27,7 @@
         "webpack": "^1.12.14"
     },
     "dependencies": {
-        "npm": "^6.11.3",
+        "npm": "^6.14.6",
         "smooth-scroll": "^14.2.1",
         "zenscroll": "^4.0.2"
     }
